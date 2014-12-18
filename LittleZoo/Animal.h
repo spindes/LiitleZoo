@@ -7,17 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Measurable.h"
 
 @class D3Size;
 @protocol Food;
 
-@protocol Animal <NSObject>
+@protocol Animal <NSObject, Measurable>
 
 -(BOOL) feed:(id<Food>)food;
 -(BOOL) play:(id)toy;
 
-@property (nonatomic, strong) D3Size* size;
-@property (nonatomic, strong) NSNumber* weight;
+
 
 @optional
 -(BOOL) sleep;

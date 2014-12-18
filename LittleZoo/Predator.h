@@ -5,11 +5,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Animal.h"
+#import "BaseAnimal.h"
 
 @class D3Size;
+@protocol Food;
 
-
-@interface Predator : NSObject<Animal>
+@interface Predator : BaseAnimal <Food>
 - (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight;
 
 + (instancetype)predatorWithSize:(D3Size *)size weight:(NSNumber *)weight;

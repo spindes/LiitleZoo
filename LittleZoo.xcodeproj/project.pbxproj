@@ -20,8 +20,10 @@
 		EBBF2639A4FBBF997EB3F606 /* Predator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF29175A9689C0715BE68E /* Predator.m */; };
 		EBBF2724FAFA422D6D91995D /* Vegetables.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF2B5A0163DEFC529FABCE /* Vegetables.m */; };
 		EBBF27A59E39938229A983C1 /* Rabbit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF265D3D7D95F629037C5D /* Rabbit.m */; };
+		EBBF2817E599612D4257C4AF /* BaseAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF2B660F13D730E1206624 /* BaseAnimal.m */; };
 		EBBF28DB397A1616368E6E7E /* Vegetables.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF2B5A0163DEFC529FABCE /* Vegetables.m */; };
 		EBBF2AB6A0A8399F03461514 /* Grazing.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF2ACF64E7C4BD22687AE4 /* Grazing.m */; };
+		EBBF2AF3620D1589E20D9829 /* BaseAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF2B660F13D730E1206624 /* BaseAnimal.m */; };
 		EBBF2C594E2910BF1DB2B2C3 /* Grazing.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF2ACF64E7C4BD22687AE4 /* Grazing.m */; };
 		EBBF2E8C6BB181C4D640161C /* Rabbit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBF265D3D7D95F629037C5D /* Rabbit.m */; };
 /* End PBXBuildFile section */
@@ -56,12 +58,15 @@
 		EBBF20064EFA1291E19F9E15 /* Predator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Predator.h; sourceTree = "<group>"; };
 		EBBF2201FAE6A67E81379A00 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		EBBF222213A02CE53BB82937 /* Vegetables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vegetables.h; sourceTree = "<group>"; };
+		EBBF222CA87F9225B999C2F0 /* Measurable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Measurable.h; sourceTree = "<group>"; };
+		EBBF224E03F238A1AA4E9F8A /* BaseAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimal.h; sourceTree = "<group>"; };
 		EBBF265D3D7D95F629037C5D /* Rabbit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rabbit.m; sourceTree = "<group>"; };
 		EBBF272F430E1EA326654C9B /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 		EBBF27954C2208E2E9F9985E /* Rabbit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rabbit.h; sourceTree = "<group>"; };
 		EBBF29175A9689C0715BE68E /* Predator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Predator.m; sourceTree = "<group>"; };
 		EBBF2ACF64E7C4BD22687AE4 /* Grazing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grazing.m; sourceTree = "<group>"; };
 		EBBF2B5A0163DEFC529FABCE /* Vegetables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vegetables.m; sourceTree = "<group>"; };
+		EBBF2B660F13D730E1206624 /* BaseAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimal.m; sourceTree = "<group>"; };
 		EBBF2FC7F01F582BB6388E0F /* Grazing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grazing.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +151,7 @@
 				EBBF272F430E1EA326654C9B /* Food.h */,
 				EBBF2517B423DF7B9CB5BA5C /* Animals */,
 				EBBF2331674EF0547D6DCB3F /* Grass */,
+				EBBF222CA87F9225B999C2F0 /* Measurable.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -182,6 +188,8 @@
 				EBBF20064EFA1291E19F9E15 /* Predator.h */,
 				EBBF29175A9689C0715BE68E /* Predator.m */,
 				EBBF2689E69C94E4B060495D /* Impl */,
+				EBBF2B660F13D730E1206624 /* BaseAnimal.m */,
+				EBBF224E03F238A1AA4E9F8A /* BaseAnimal.h */,
 			);
 			name = Animals;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 				EBBF23B423742318CA7A3B5E /* Predator.m in Sources */,
 				EBBF2E8C6BB181C4D640161C /* Rabbit.m in Sources */,
 				EBBF28DB397A1616368E6E7E /* Vegetables.m in Sources */,
+				EBBF2AF3620D1589E20D9829 /* BaseAnimal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +325,7 @@
 				EBBF2639A4FBBF997EB3F606 /* Predator.m in Sources */,
 				EBBF27A59E39938229A983C1 /* Rabbit.m in Sources */,
 				EBBF2724FAFA422D6D91995D /* Vegetables.m in Sources */,
+				EBBF2817E599612D4257C4AF /* BaseAnimal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

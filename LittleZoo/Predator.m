@@ -11,7 +11,6 @@
 @implementation Predator {
 
 
-
 }
 @synthesize size = _size;
 @synthesize weight = _weight;
@@ -32,9 +31,14 @@
 
 
 - (BOOL)feed:(id <Food>)food {
-    {
-        return (food.type == FoodType_Meat);
+    float volumeRatio = [food.size volume].floatValue/[self.size volume].floatValue ;
+    BOOL result = NO;
+    if ([super feed:food]) {
+        result = (food.type == FoodType_Meat && volumeRatio < 2);
     }
+
+    return result;
+//    }
 
 //    if
 //        (self.weight < Food.weight)
