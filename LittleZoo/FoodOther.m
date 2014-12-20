@@ -3,11 +3,11 @@
 // Copyright (c) 2014 Aleksandra Borovytskaya. All rights reserved.
 //
 
-#import "Vegetables.h"
+#import "FoodOther.h"
 #import "D3Size.h"
 
 
-@implementation Vegetables {
+@implementation FoodOther {
 
 @private
     D3Size *_size;
@@ -18,7 +18,7 @@
 @synthesize weight = _weight;
 
 - (FoodType)type {
-    return FoodType_Grass;
+    return FoodType_Other;
 }
 
 - (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight {
@@ -31,7 +31,7 @@
     return self;
 }
 
-+ (instancetype)vegetablesWithSize:(D3Size *)size weight:(NSNumber *)weight {
++ (instancetype)FoodOtherWithSize:(D3Size *)size weight:(NSNumber *)weight {
     return [[self alloc] initWithSize:size weight:weight];
 }
 

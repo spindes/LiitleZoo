@@ -9,10 +9,8 @@
 @class D3Size;
 
 
-@interface Vegetables : NSObject<Food>
-- (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight;
-
-+ (instancetype)vegetablesWithSize:(D3Size *)size weight:(NSNumber *)weight;
+@interface FoodOther : NSObject<Food>
 
 
++ (instancetype)FoodOtherWithSize:(D3Size *)size weight:(NSNumber *)weight;
 @end
