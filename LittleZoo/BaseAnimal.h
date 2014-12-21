@@ -8,4 +8,9 @@
 #import "Food.h"
 
 @interface BaseAnimal : NSObject <Animal, Food>
+
++ (instancetype)animalWithSize:(D3Size *)size weight:(NSNumber *)weight;
+
+- (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight;
+
 @end

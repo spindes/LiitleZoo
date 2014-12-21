@@ -12,24 +12,6 @@
 
 
 }
-@synthesize size = _size;
-@synthesize weight = _weight;
-
-- (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight {
-    self = [super init];
-    if (self) {
-        _size = size;
-        _weight = weight;
-    }
-
-    return self;
-}
-
-+ (instancetype)predatorWithSize:(D3Size *)size weight:(NSNumber *)weight {
-    return [[self alloc] initWithSize:size weight:weight];
-}
-
-
 - (BOOL)feed:(id <Food>)food {
     float volumeRatio = [food.size volume].floatValue/[self.size volume].floatValue ;
     BOOL result = NO;
@@ -52,6 +34,31 @@
 
 - (BOOL)play:(id)toy {
     return NO;
+}
+
+- (BOOL)isEqual:(id)other {
+    if (other == self)
+        return YES;
+    if (!other || ![[other class] isEqual:[self class]])
+        return NO;
+
+    return [self isEqualToPredator:other];
+}
+
+- (BOOL)isEqualToPredator:(Predator *)predator {
+    if (self == predator)
+        return YES;
+    if (predator == nil)
+        return NO;
+    return YES;
+}
+
+- (NSUInteger)hash {
+    return [super hash];
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    return [[[self class] allocWithZone:zone] init];
 }
 
 @end

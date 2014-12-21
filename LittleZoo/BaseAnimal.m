@@ -17,6 +17,21 @@
 @synthesize size = _size;
 @synthesize weight = _weight;
 
+- (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight {
+    self = [super init];
+    if (self) {
+        _size = size;
+        _weight = weight;
+    }
+
+    return self;
+}
+
++ (instancetype)animalWithSize:(D3Size *)size weight:(NSNumber *)weight {
+    return [[self alloc] initWithSize:size weight:weight];
+}
+
+
 - (FoodType)type {
     return FoodType_Meat;
 }

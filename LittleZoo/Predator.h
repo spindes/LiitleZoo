@@ -10,9 +10,16 @@
 @class D3Size;
 @protocol Food;
 
-@interface Predator : BaseAnimal <Food>
-- (instancetype)initWithSize:(D3Size *)size weight:(NSNumber *)weight;
+@interface Predator : BaseAnimal <Food, NSCopying>
 
-+ (instancetype)predatorWithSize:(D3Size *)size weight:(NSNumber *)weight;
+
+- (id)copyWithZone:(NSZone *)zone;
+
+- (BOOL)isEqual:(id)other;
+
+- (BOOL)isEqualToPredator:(Predator *)predator;
+
+- (NSUInteger)hash;
+
 
 @end
